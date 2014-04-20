@@ -1,0 +1,8 @@
+<h1> Editing: <%= @deck.name %> <h1>
+<%= form_for(@deck) do |f| %>
+  <div>
+    <%= f.label :name%>
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+  <%= f.submit "Update Deck" %>
+<% end %>
